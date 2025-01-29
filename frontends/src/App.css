@@ -1,0 +1,31 @@
+.zindex {
+    position: relative; /* Ensure proper stacking context */
+    background-color: rgba(78, 76, 76, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Optional: Add some padding */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* height: 80vh; Optional: Add a shadow for depth */
+  } .frontback {
+    background-image: url("/public/images/Free-Nature-Backgrounds-Sunset-by-Pixabay.jpg");
+    background-size:200vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+}
+.atag{
+  text-decoration: none;
+  
+}.hover-effect:hover {
+  background-color: #e2e8f0; /* Equivalent of zinc-200 */
+  color: black;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}

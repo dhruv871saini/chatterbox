@@ -1,0 +1,32 @@
+.avatar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .online-indicator {
+    position: absolute;
+    /* bottom: 0; */
+    right: 0;
+    top:0;
+    width: 15px;
+    height: 15px;
+    background-color: #f9250d; /* Use green for online indicator */
+    border-radius: 50%;
+    border: 2px solid white; /* Optional white border for a cleaner look */
+  }
+  
+  .user-info {
+    overflow: hidden;
+  }
+  
+  .user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px; /* Adjust width as needed */
+  }
+  
