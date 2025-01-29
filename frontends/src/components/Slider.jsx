@@ -15,7 +15,7 @@ const Slider = () => {
   const dispatch=useDispatch();
   const logouthandler= async()=>{
   try {
-    const res = await axios.get("http://localhost:5003/api/v1/user/logout")
+    const res = await axios.get(`https://chatterbox-1-oum0.onrender.com/api/v1/user/logout`)
     navigate("/");
     toast.success(res.status.message)
     console.log(res)

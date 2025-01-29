@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-  origin: `http://localhost:3000`,
+  origin: `https://chatterbox-1-oum0.onrender.com`,
   credentials: true,
 };
 app.use(cors(corsOption));

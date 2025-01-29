@@ -18,7 +18,7 @@ const useGetMessage = () => {
       try {
         axios.defaults.withCredentials = true;
         const res = await axios.get(
-          `http://localhost:5003/api/v1/message/conversation/${selectorUsers._id}`
+          `https://chatterbox-1-oum0.onrender.com/api/v1/message/conversation/${selectorUsers._id}`
         );
         dispatch(setMessage(res.data));
       } catch (error) {

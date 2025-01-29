@@ -29,7 +29,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:5003/api/v1/user/login', user, {
+      const res = await axios.post('https://chatterbox-1-oum0.onrender.com/api/v1/user/login', user, {
         headers: {
           'Content-Type': 'application/json'
         },

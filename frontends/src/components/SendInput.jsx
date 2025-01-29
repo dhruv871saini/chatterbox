@@ -14,7 +14,7 @@ const SendInput = () => {
     e.preventDefault()
     // alert(message)
     try {
-     const res=await axios.post(`http://localhost:5003/api/v1/message/send/${selectorUsers?._id}`,{message},{
+     const res=await axios.post(`https://chatterbox-1-oum0.onrender.com/api/v1/message/send/${selectorUsers?._id}`,{message},{
       headers:{
         "Content-Type":"application/json"
       },withCredentials:true

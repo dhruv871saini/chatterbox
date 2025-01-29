@@ -10,7 +10,7 @@ const useGetOtherUsers = () => {
     const fetchOtherUsers = async () => {
       try {
         axios.defaults.withCredentials = true;
-        const res = await axios.get('http://localhost:5003/api/v1/user/');
+        const res = await axios.get('https://chatterbox-1-oum0.onrender.com/api/v1/user/');
         dispatch(setOtherUsers(res.data));
       } catch (error) {
         console.log(error);

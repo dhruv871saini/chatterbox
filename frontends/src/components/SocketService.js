@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 let socket;
 
 export const initializeSocket = (userId) => {
-  socket = io("http://localhost:5003", { query: { userId } });
+  socket = io("https://chatterbox-1-oum0.onrender.com", { query: { userId } });
   return socket;
 };
 

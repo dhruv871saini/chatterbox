@@ -22,7 +22,7 @@ const Signup = () => {
   const Submitform = async(e)=>{
   e.preventDefault()
 try {
-  const res=await axios.post(`http://localhost:5003/api/v1/user/register`,user,{
+  const res=await axios.post(`https://chatterbox-1-oum0.onrender.com/api/v1/user/register`,user,{
     headers:{
       'Content-Type':'application/json'
     },
