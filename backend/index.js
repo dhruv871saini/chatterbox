@@ -33,9 +33,9 @@ console.log("Port:", process.env.PORT);
 
 const PORT = process.env.PORT || 5001;
 
-app.use(express.static(path.join(_dirname,"/frontend/build")))
+app.use(express.static(path.join(_dirname,"/frontends/build")))
 app.get("*",(req,res)=>{
-  res.sendFile(path.join(_dirname,"frontend","build","index.html"))
+  res.sendFile(path.join(_dirname,"frontends","build","index.html"))
 })
 server.listen(PORT, () => {
   connectDB();  // Connect to the database
