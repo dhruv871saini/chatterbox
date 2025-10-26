@@ -78,7 +78,7 @@ sequenceDiagram
     Backend-->>Frontend: JWT cookie + user data
     Frontend->>Redux: dispatch setAuthUser
     Frontend->>User: Redirect to /home
-``` chatterbox:28-46 
+```  
 
 ### Real-time Messaging Flow
 
@@ -102,7 +102,7 @@ sequenceDiagram
         SocketIO->>Receiver: Real-time delivery
     end
     MessageController-->>Frontend: 201 Created
-``` chatterbox:5-42 chatterbox:15-26 
+``` 
 
 ### Tech Stack
 
@@ -150,7 +150,7 @@ npm start
 # Start frontend (in separate terminal)
 cd ../frontends
 npm start
-``` chatterbox:9-12 
+``` 
 
 ### API Endpoints
 
