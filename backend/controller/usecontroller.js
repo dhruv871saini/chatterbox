@@ -22,8 +22,8 @@ export const register =async(req,res)=>{
     }
     const hashPassword=await bcrypt.hash(password,10)
      
-    const maleProfilePic=`https://avatar.iran.liara.run/public/boy?username=${userName}`
-    const femaleProfilePic=`https://avatar.iran.liara.run/public/girl?username=${userName}`
+    const maleProfilePic=`https://cdn-dqs.mogiio.com/dev/mogiDocs/6a15a2026a10a34a30aaScreenshotfrom20260615103224.png`
+    const femaleProfilePic=`https://cdn-dqs.mogiio.com/dev/mogiDocs/6a15a2026a10a34a02aawoman6833605.png`
     await User.create({
         fullName,
         userName,
