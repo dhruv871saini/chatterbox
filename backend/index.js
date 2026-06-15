@@ -26,10 +26,6 @@ app.use(cors(corsOption));
 app.use("/api/v1/user", userrouter);
 app.use("/api/v1/message", messageRoute);  // Use the message route
 
-// For testing
-console.log("Mongo URI:", process.env.MONGO_URI);
-console.log("Secret Key:", process.env.SECRET_KEY);
-console.log("Port:", process.env.PORT);
 
 const PORT = process.env.PORT || 5001;
 
